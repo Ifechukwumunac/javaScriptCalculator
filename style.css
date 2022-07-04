@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 90%);
+  font-size: 2rem;
+  font-family: Arial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#container {
+  border: 1px solid black;  
+  padding: 5px;      
+}
+
+#displayContainer{
+    border: none;
+    height: 20vh;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 70px;
+    position: relative;
+}
+
+#subDisplayContainer{
+  width: 97%;
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  overflow-x: auto;
+  /* just in case */
+  overflow-y: auto;
+}
+
+
+#buttonContainer {
+  display: grid;
+  gap: 4px;
+  height: 75vh;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: Arial;
+  background-color: #fff;
+}
+button:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+#allclear {
+  grid-column: 1 / span 2;
+  background-color: rgb(118, 67, 167);
+  color: #fff;
+}
+#allclear:hover {
+  color: yellow;
+}
+
+#backspace {
+  grid-column: 3;
+}
+#divide {
+  grid-column: 4;
+}
+
+#equals {
+  grid-column: span 2;
+  background-color: rgb(118, 67, 167);
+  color: #fff;
+}
+#equals:hover {
+  color: yellow;
+}
+
+@media only screen and (min-width:375px){
+  #container{
+    width: 95%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width:1000px){
+  #container{
+    width: 35%;
+    margin: auto;
+  }
+}
+

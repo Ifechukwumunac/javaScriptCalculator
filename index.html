@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculatorApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="displayContainer">
+        <div id="subDisplayContainer"></div>
+      </div>
+
+      <div id="buttonContainer">
+        <button id="allclear" onclick="clr()">AC</button>
+        <button id="backspace" onclick="bckspc()">C</button>
+        <button id="divide" onclick="dsplyPrtr('/')">/</button>
+        <button  id="one" onclick="dsplyNmbr(1)">1</button>
+        <button  id="two" onclick="dsplyNmbr(2)">2</button>
+        <button id="three" onclick="dsplyNmbr(3)">3</button>
+        <button  id="multiply" onclick="dsplyPrtr('*')">*</button>
+        <button id="four" onclick="dsplyNmbr(4)">4</button>
+        <button  id="five" onclick="dsplyNmbr(5)">5</button>
+        <button  id="six" onclick="dsplyNmbr(6)">6</button>
+        <button id="plus" onclick="dsplyPrtr('+')">+</button>
+        <button  id="seven" onclick="dsplyNmbr(7)">7</button>
+        <button  id="eight" onclick="dsplyNmbr(8)">8</button>
+        <button id="nine" onclick="dsplyNmbr(9)">9</button>
+        <button  id="minus" onclick="dsplyPrtr('-')">-</button>
+        <button id="decimal" onclick="dsplyDcml()">.</button>
+        <button id="zero" onclick="dsplyNmbr(0)">0</button>
+        <button id="equals" onclick="clclt()">=</button>
+      </div>
+    </div>
+  </body>
+  <!-- remember its best practice to always put script tag here -->
+  <script src="script.js"></script>
+</html>
